@@ -124,7 +124,7 @@ void checktime()
 time_t currentTime;
 time(&currentTime);
 tm *myTime = localtime(&currentTime);
-if((myTime->tm_hour >=0) && (myTime->tm_hour <4))
+if((myTime->tm_hour >=10) && (myTime->tm_hour <12))
 {
 admincheck();
 }
